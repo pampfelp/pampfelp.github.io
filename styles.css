@@ -36,6 +36,8 @@ nav a.active::after { content: ""; position: absolute; bottom: 10px; left: 0; ri
 .hero { text-align: center; }
 .hero h1 { margin: 0; font-size: clamp(38px, 4vw, 63px); line-height: 1.15; letter-spacing: -0.035em; font-weight: 720; }
 .hero p { margin: 22px 0 0; color: var(--muted); font-size: clamp(19px, 2.4vw, 32px); line-height: 1.35; }
+.hero .open-editor { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; margin-top: 30px; padding: 0 28px; border-radius: 8px; background: var(--accent); color: #fff; font-size: 17px; font-weight: 600; text-decoration: none; }
+.hero .open-editor:hover { background: #0876d8; }
 .features { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px; }
 .feature-card { min-height: 260px; padding: 34px 40px; border: 1px solid #d8dfe8; border-radius: 11px; background: var(--panel); }
 .feature-icon { display: grid; place-items: center; width: 68px; height: 68px; border-radius: 15px; background: #edf6ff; }

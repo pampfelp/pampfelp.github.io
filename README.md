@@ -1,7 +1,7 @@
-# OpenCut Pessoal — páginas públicas
+# OpenCut Pessoal
 
-Este repositório contém apenas a apresentação, a política de privacidade e os termos de uso do OpenCut Pessoal. O editor de vídeo e os projetos pessoais não são publicados aqui.
+Este repositório publica a apresentação, a política de privacidade, os termos de uso e a versão estática do editor de vídeo em `https://pampfelp.github.io/opencut/`.
 
-As páginas são arquivos HTML e CSS estáticos servidos pelo GitHub Pages em `https://pampfelp.github.io/`.
+O editor roda no navegador. Projetos e mídias ficam primeiro no armazenamento local de cada aparelho; a sincronização opcional usa a conta Google Drive autorizada pelo usuário. O repositório contém somente os arquivos do aplicativo, nunca os projetos pessoais ou vídeos.
 
-O OpenCut Pessoal é uma adaptação do OpenCut Classic, cujo código de origem usa a licença MIT. A cópia local do editor preserva essa licença.
+O OpenCut Pessoal é uma adaptação do OpenCut Classic. A licença MIT acompanha a publicação em `LICENSE`.

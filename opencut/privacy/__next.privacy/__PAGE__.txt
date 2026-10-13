@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[19543,["/opencut/_next/static/chunks/0049c1686a89bbd6.js","/opencut/_next/static/chunks/c1a259fec1fa0c1e.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+0:{"buildId":"_jj55YipQQf_s5YF4rkQX","rsc":["$","$1","c",{"children":[["$","main",null,{"className":"mx-auto max-w-xl p-8","children":[["$","h1",null,{"className":"text-2xl font-semibold","children":"Privacidade"}],["$","p",null,{"className":"mt-4","children":"A política de privacidade do OpenCut Pessoal está na página pública."}],["$","a",null,{"className":"mt-4 inline-block underline","href":"https://pampfelp.github.io/privacidade.html","children":"Abrir política de privacidade"}]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
+4:null
