@@ -29,17 +29,17 @@ O token Google fica apenas na memória da aba e vence; depois será preciso cone
 
 ## Publicação no GitHub Pages
 
-O editor está publicado como aplicativo estático em [pampfelp.github.io/opencut](https://pampfelp.github.io/opencut/). Qualquer pessoa pode abrir a interface, conforme autorizado pelo usuário; os projetos e vídeos de cada pessoa permanecem no armazenamento local do próprio navegador e só entram no Google Drive da conta que autorizar a sincronização. O código publicado solicita `noindex`, mas isso não restringe acesso.
+O editor está publicado em [pampfelp.github.io](https://pampfelp.github.io/), que abre a aplicação em `/opencut/`. Código-fonte e site publicado ficam no mesmo repositório `pampfelp/pampfelp.github.io`; esta pasta `source/` contém o código de desenvolvimento. Qualquer pessoa pode abrir a interface, conforme autorizado pelo usuário; os projetos e vídeos de cada pessoa permanecem no armazenamento local do próprio navegador e só entram no Google Drive da conta que autorizar a sincronização. O código publicado solicita `noindex`, mas isso não restringe acesso.
 
-O aplicativo em `apps/pages` reutiliza os componentes do editor em `apps/web` e gera os arquivos estáticos com `bun run build`. Para atualizar o Pages, copie `apps/pages/out/` para a pasta `opencut/` do repositório `pampfelp.github.io`, preserve `.nojekyll` e copie `apps/web/public/` para a raiz desse repositório, pois alguns recursos usam caminhos absolutos. Depois confira a lista de projetos, a edição e uma exportação antes do push.
+O aplicativo em `apps/pages` reutiliza os componentes do editor em `apps/web` e gera os arquivos estáticos com `bun run build`. Para atualizar o Pages, copie `source/apps/pages/out/` para `opencut/` na raiz deste repositório, preserve `.nojekyll` e copie `source/apps/web/public/` para a raiz, pois alguns recursos usam caminhos absolutos. Depois confira a lista de projetos, a edição e uma exportação antes do push.
 
 O GitHub Pages não executa a rota de busca de sons do OpenCut. Ela já estava sem chave Freesound configurada nesta cópia; o usuário pode importar os próprios arquivos de áudio.
 
-A apresentação e as políticas aprovadas estão em [pampfelp.github.io](https://pampfelp.github.io/), no mesmo repositório público [pampfelp/pampfelp.github.io](https://github.com/pampfelp/pampfelp.github.io). Ainda falta preencher no Branding do Google Auth Platform a página inicial `https://pampfelp.github.io/`, a política `https://pampfelp.github.io/privacidade.html`, os termos `https://pampfelp.github.io/termos.html` e o domínio autorizado `pampfelp.github.io`, salvar e tentar **Publicar app**. Só usar o Google Search Console se o Google pedir a verificação de propriedade do domínio.
+A apresentação e as políticas aprovadas estão no mesmo repositório público [pampfelp/pampfelp.github.io](https://github.com/pampfelp/pampfelp.github.io). Ainda falta preencher no Branding do Google Auth Platform a página inicial `https://pampfelp.github.io/sobre.html`, a política `https://pampfelp.github.io/privacidade.html`, os termos `https://pampfelp.github.io/termos.html` e o domínio autorizado `pampfelp.github.io`, salvar e tentar **Publicar app**. Só usar o Google Search Console se o Google pedir a verificação de propriedade do domínio.
 
 ## Rodar localmente
 
-Com Bun instalado, na raiz do repositório:
+Com Bun instalado, dentro da pasta `source/` deste repositório:
 
 ```powershell
 bun install --frozen-lockfile
