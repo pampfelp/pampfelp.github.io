@@ -1,0 +1,80 @@
+:root {
+  color-scheme: light;
+  --bg: #fff;
+  --panel: #fff;
+  --ink: #12141b;
+  --muted: #697080;
+  --line: #e2e5ea;
+  --accent: #1689f5;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { min-width: 320px; }
+body { margin: 0; background: var(--bg); color: var(--ink); }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 3px; }
+
+.site-header {
+  height: 76px;
+  padding: 0 4%;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.brand { display: flex; align-items: center; gap: 16px; color: var(--ink); font-size: 21px; font-weight: 650; text-decoration: none; white-space: nowrap; }
+.brand-mark { position: relative; display: inline-block; width: 30px; height: 30px; background: #07090c; clip-path: polygon(27% 0, 73% 0, 100% 27%, 100% 73%, 73% 100%, 27% 100%, 0 73%, 0 27%); flex: none; }
+.brand-mark::after { content: ""; position: absolute; inset: 8px; background: var(--bg); }
+nav { display: flex; align-items: center; gap: 52px; align-self: stretch; }
+nav a { display: flex; align-items: center; min-height: 44px; position: relative; color: var(--muted); font-size: 18px; text-decoration: none; }
+nav a:hover, nav a.active { color: var(--accent); }
+nav a.active::after { content: ""; position: absolute; bottom: 10px; left: 0; right: 0; height: 2px; background: var(--accent); }
+
+.home-main { min-height: calc(100vh - 152px); max-width: 1110px; margin: auto; display: flex; flex-direction: column; justify-content: center; gap: 76px; padding: 80px 0 112px; }
+.hero { text-align: center; }
+.hero h1 { margin: 0; font-size: clamp(38px, 4vw, 63px); line-height: 1.15; letter-spacing: -0.035em; font-weight: 720; }
+.hero p { margin: 22px 0 0; color: var(--muted); font-size: clamp(19px, 2.4vw, 32px); line-height: 1.35; }
+.features { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px; }
+.feature-card { min-height: 260px; padding: 34px 40px; border: 1px solid #d8dfe8; border-radius: 11px; background: var(--panel); }
+.feature-icon { display: grid; place-items: center; width: 68px; height: 68px; border-radius: 15px; background: #edf6ff; }
+.feature-icon svg { width: 35px; height: 35px; stroke: #11141a; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.feature-card h2 { margin: 22px 0 10px; font-size: 23px; line-height: 1.25; }
+.feature-card p { margin: 0; color: var(--muted); font-size: 18px; line-height: 1.5; }
+
+.document-main { max-width: 770px; min-height: calc(100vh - 152px); margin: 0 auto; padding: 66px 0 90px; }
+.document-main h1 { margin: 0 0 8px; font-size: clamp(33px, 3.7vw, 50px); line-height: 1.2; letter-spacing: -0.03em; }
+.document-main .updated { margin: 0 0 23px; color: var(--muted); font-size: 15px; }
+.document-main h2 { margin: 38px 0 10px; font-size: 23px; line-height: 1.3; }
+.document-main p { margin: 0 0 16px; color: #515b6e; font-size: 17px; line-height: 1.62; }
+.document-main code { font: 0.9em Consolas, monospace; color: var(--ink); }
+.document-main a { overflow-wrap: anywhere; }
+
+.site-footer { min-height: 76px; margin: 0 2.5%; border-top: 1px solid var(--line); display: flex; align-items: center; justify-content: center; gap: 30px; font-size: 15px; }
+.site-footer a { text-decoration: none; }
+.site-footer a:hover { text-decoration: underline; }
+
+@media (max-width: 760px) {
+  .site-header { height: 68px; padding: 0 18px; }
+  .brand { gap: 9px; font-size: 16px; }
+  .brand-mark { width: 25px; height: 25px; }
+  .brand-mark::after { inset: 7px; }
+  nav { gap: 16px; }
+  nav a { font-size: 14px; }
+  .home-main { min-height: calc(100vh - 136px); gap: 44px; padding: 76px 20px 90px; }
+  .hero h1 { font-size: 38px; }
+  .hero p { margin-top: 16px; font-size: 20px; }
+  .features { grid-template-columns: 1fr; gap: 16px; }
+  .feature-card { min-height: 0; padding: 25px; }
+  .feature-card h2 { font-size: 21px; }
+  .feature-card p { font-size: 16px; }
+  .document-main { min-height: calc(100vh - 136px); padding: 48px 22px 70px; }
+  .document-main p { font-size: 16px; }
+}
+
+@media (max-width: 390px) {
+  .brand { font-size: 14px; }
+  nav { gap: 10px; }
+  nav a { font-size: 13px; }
+}
